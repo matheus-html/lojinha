@@ -12,7 +12,6 @@ public class ControleLoja{
 
         while (true) {
             System.out.printf("Lojinha\nDigite o número da ação desejada:");
-            System.out.println("");
             System.out.println("1. Gerenciar pessoas:");
             System.out.println("2. Gerenciar produtos:");
             System.out.println("3. Limpar Console");
