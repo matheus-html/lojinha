@@ -16,7 +16,6 @@ public class ControleLoja{
             System.out.println("2. Gerenciar produtos:");
             System.out.println("3. Limpar Console");
             System.out.println("4. Sair");
-
             int op = sc.nextInt();
             sc.nextLine();
             switch (op) {
