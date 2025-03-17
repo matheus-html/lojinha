@@ -1,17 +1,16 @@
 import java.util.Scanner;
 import pessoas.*;
-import produtos.*;
-import gestao.GestorLoja;
+import gestao.Gestor;
 
 
-public class ControleLoja{
+public class ControladorMenu {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        GestorLoja gestao = new GestorLoja();
+        Gestor gestao = new Gestor();
 
         while (true) {
-            System.out.printf("Lojinha\nDigite o número da ação desejada:");
+            System.out.printf("Lojinha\nDigite o número da ação desejada:\n\n");
             System.out.println("1. Gerenciar pessoas:");
             System.out.println("2. Gerenciar produtos:");
             System.out.println("3. Limpar Console");
@@ -20,7 +19,7 @@ public class ControleLoja{
             sc.nextLine();
             switch (op) {
                 case 1:
-                    System.out.println("Gerenciar pessoas:/n");
+                    System.out.println("Gerenciar pessoas:\n");
                     System.out.println("Digite o número da ação desejada:");
                     System.out.println("1. Adicionar pessoa:");
                     System.out.println("2. Lista de pessoas:");
@@ -39,8 +38,9 @@ public class ControleLoja{
                             String codigo = sc.nextLine();
                             gestao.adicionarPessoa(new Pessoa(nome, CPF, codigo));
                             break;
-
                         case 2:
+                            sc.nextLine();
+
                     }
 
                 case 2:

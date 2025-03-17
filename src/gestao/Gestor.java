@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import pessoas.*;
 
 
-public class GestorLoja implements GerentePessoa, GerenteProduto {
+public class Gestor implements GerentePessoa, GerenteProduto {
 
     protected ArrayList<Pessoa> pessoas = new ArrayList<>();
     protected ArrayList<Produto> produtos = new ArrayList<>();
@@ -27,7 +27,7 @@ public class GestorLoja implements GerentePessoa, GerenteProduto {
                 return;
             }
         }
-        System.out.println("pessoas.Pessoa não encontrada.");
+        System.out.println("Pessoa não encontrada.");
     }
 
     @Override
@@ -45,11 +45,11 @@ public class GestorLoja implements GerentePessoa, GerenteProduto {
     public void buscarProduto(String codigo) {
         for (Produto produto : produtos) {
             if (produto.getCodigo().equals(codigo)) {
-                System.out.println("produtos.Produto encontrado:");
+                System.out.println("Produto encontrado:");
                 return;
             }
         }
-        System.out.println("produtos.Produto não encontrado.");
+        System.out.println("Produto não encontrado.");
     }
 
     public void mostrarPessoa() {
