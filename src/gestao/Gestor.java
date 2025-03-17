@@ -52,6 +52,10 @@ public class Gestor implements GerentePessoa, GerenteProduto {
         System.out.println("Produto não encontrado.");
     }
 
+    public void qntPessoas(){
+        System.out.println("Quantidade de pessoas cadastradas: "+pessoas.size());
+    }
+
     public void mostrarPessoa() {
         for(Pessoa pessoa: pessoas) {
             pessoa.mostrar();

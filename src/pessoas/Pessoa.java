@@ -36,5 +36,6 @@ public class Pessoa {
         System.out.println("Nome:" + nome);
         System.out.println("CPF: " + CPF);
         System.out.println("Codigo: "+ codigo);
+        System.out.println("\n");
     }
 }

@@ -40,11 +40,15 @@ public class ControladorMenu {
                             break;
                         case 2:
                             sc.nextLine();
+                            System.out.println("Lista de pessoas:");
+                            gestao.qntPessoas();
+                            gestao.mostrarPessoa();
+
 
                     }
 
                 case 2:
-                    System.out.println("Gerenciar produtos.Produto:");
+                    System.out.println("Gerenciar Produto:");
                     System.out.println("Digite o número da ação desejada:");
                     System.out.println("1. Adicionar produto:");
                     System.out.println("2. Lista de produtos:");
