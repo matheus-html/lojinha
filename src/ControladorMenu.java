@@ -27,7 +27,8 @@ public class ControladorMenu {
                     System.out.println("4. Excluir pessoa:");
                     System.out.println("5. Voltar ao menu principal:");
 
-                    switch (sc.nextInt()) {
+                    int op2 = sc.nextInt();
+                    switch (op2) {
                         case 1:
                             sc.nextLine();
                             System.out.print("Digite o nome da pessoa: ");
@@ -43,6 +44,7 @@ public class ControladorMenu {
                             System.out.println("Lista de pessoas:");
                             gestao.qntPessoas();
                             gestao.mostrarPessoa();
+                            break;
 
 
                     }
@@ -55,6 +57,7 @@ public class ControladorMenu {
                     System.out.println("3. Atualizar produto:");
                     System.out.println("4. Excluir produto:");
                     System.out.println("5. Voltar ao menu principal:");
+                    break;
             }
         }
     }
